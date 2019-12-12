@@ -1,0 +1,47 @@
+
+<div class="container">
+
+  <h1>{{name | slice:5}}</h1>
+  <h1>{{name | uppercase}}</h1>
+    <h1>{{name | lowercase}}</h1>
+    <h1>{{name | userid:'rakshasikonanki' }}</h1>
+  <h1>{{0.23 | percent}}</h1>
+  <h2>{{ person | json }}</h2>
+  <h2>{{0.25 | currency :'india'}}</h2>
+  <h2>{{data | date }}</h2>
+  <h2>{{data }}</h2>
+
+  <button (click)="getuser()" >getuser</button>
+<div class="content">
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>phone</th>
+        <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let users of response">
+        <td>{{users.id | userid:users.id }}</td>
+        <td>{{users.name | uppercase}}</td>
+        <td>{{users.email | lowercase}}</td>
+        <td>{{users.phone}}</td>
+       <td>
+         <button>Edit</button>
+         <button>View</button>
+        </td>
+       
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+</div>
+
+  
+

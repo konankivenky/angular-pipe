@@ -1,0 +1,27 @@
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+table,th,td{
+    border: 1px solid black;
+    padding: 2px;
+   
+}
+
+table{
+    border-collapse: collapse;
+    margin-top:10px ;
+   
+}
+
+th{
+    background: black;
+    color: white;
+    padding: 5px;
+}
+button{
+    background: blue;
+    padding: 20px;
+    color: white;
+}
